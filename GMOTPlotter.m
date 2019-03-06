@@ -11,7 +11,7 @@ bi = 9.63; % incident
 b0 = 19;   % 0th order
 b1 = 11.2; % 1st order
 bv = 36.7; % vertical polarization
-bh = 16.6; % horizontal polarization
+b1plus = 36.92; % 1st order other polarization
 
 %% Correct power data for background light
 ii = measurements(:,1)- bi;
