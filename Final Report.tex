@@ -1,0 +1,254 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template prepared by Dr Daniel Oi, CC BY-NC 4.0          %
+%%%%%%%%%%%%%%%%Do Not Alter The Preamble%%%%%%%%%%%%%%%%%%%
+\documentclass[aps,pra,a4paper,nofootinbib,preprint,12pt]{revtex4-1} % Uses the APS RevTeX document class
+\usepackage{latexsym,graphicx,amsmath,amsfonts,amssymb,color,geometry}
+\geometry{a4paper, portrait, hmargin=2cm, vmargin={2.5cm, 3cm}}
+\usepackage{palatino} %Slightly nicer than TMR
+\def\bibsection{\section*{\refname}} %Sorts out reference section and gets rid of horizontal line
+\usepackage{titlesec}
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries\itshape}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+% \usepackage{sfmath}
+% \renewcommand{\rmdefault}{phv}
+% \renewcommand{\sfdefault}{phv}
+%%%%%%%%%%%%%%%%%%% Preamble Ends Here %%%%%%%%%%%%%%%%%%%%%%
+% Insert any other packages or definitions you want here.
+
+
+
+
+
+
+
+%%%%%%% Fill in your details below %%%%%%
+\newcommand{\projecttitle}{Experimental Technologies for Magneto-Optical Trapping}
+\newcommand{\studentname}{Stuart Smyth}
+\newcommand{\regnumber}{201527054}
+\newcommand{\degree}{MPhys}
+\newcommand{\primarysup}{Dr Oliver Burrow}
+\newcommand{\secondsup}{Dr Paul Griffin}%Comment out if needed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Do Not Alter %%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\footskip = 45pt
+\fancyhf{}
+\lhead{\projecttitle} %If title is long, insert "\small", "\footnotesize", "scriptsize", or "\tiny" in front of "\projecttitle
+%\rhead{} %Optional
+\lfoot{PH450 Project Report}
+\cfoot{Student: \regnumber}
+\rfoot{\thepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%The document starts here
+\begin{document}
+
+% This section creates the cover page
+
+\begin{figure}
+\includegraphics[width=\textwidth]{ScienceLogo.png}
+\end{figure}
+
+\title{PH450 Project Report 2016-17\\ \vspace{1cm}
+{\huge \projecttitle} %If title is too long, use \LARGE, \Large, or large instead of \huge
+\\
+\vspace{1cm}
+{\footnotesize Submitted in partial fulfilment for the degree of \degree}}
+
+\author{\studentname\\
+Registration No.: \regnumber}
+\affiliation{SUPA Department of Physics, University of Strathclyde, Glasgow G4 0NG}
+
+\vspace{1cm}
+
+\author{\primarysup}
+\affiliation{Primary Supervisor}
+
+\vspace{1cm}
+
+\author{\secondsup} % Comment out these two lines if not required
+\affiliation{Secondary Supervisor}
+
+%Use if required
+%\author{\thirdsup}
+%\affiliation{Tertiary Supervisor}
+
+\vspace{1cm}
+
+\date{\today}
+
+\pagenumbering{gobble}
+
+\maketitle % This ends the title page section
+
+
+\pagenumbering{roman} % Use Roman numerals for the front matter pages
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Notes: Change text in red as appropriate to your report.  %
+% Remove the "\textcolor{red}{}" parts so that final output %
+% text is black.                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textcolor{red}{In a few sentences, concisely summarise your project and results. Indicate what research problem was addressed, the methods used, and the main conclusions.} 
+
+\newpage
+\section*{Preface}
+\addcontentsline{toc}{section}{Preface}
+
+\textcolor{red}{State explicitly how your dissertation relies on the work of others, highlighting the portions that you claim to be your own original work. E.g. ``The results presented in chapter 3 rely upon a simulation data provided by the research group. The data analysis is entirely my own work. The analysis in chapter 4 was performed in conjunction with my supervisor\ldots'' etc.  Without clarifying statements, it will be assumed that your thesis is a review article with no original content. Be sure to claim only your own work, any evidence to the contrary may leave you susceptible to charges of plagiarism.}
+
+\newpage
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+\textcolor{red}{You may want to acknowledge people who have helped you in your project.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Do not alter this section %
+\newpage
+\tableofcontents % Creates a Table of Contents
+\makeatletter
+\let\toc@pre\relax
+\let\toc@post\relax
+\makeatother 
+
+\newpage % Creates List of Figures
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\newpage % Creates List of Tables.Comment out both lines if no tables.
+\listoftables
+\addcontentsline{toc}{section}{List of Tables}
+
+\clearpage
+%                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%% Main Report Starts Here %%%%%
+
+\newpage
+\pagenumbering{arabic}
+\section{Introduction}
+
+\textcolor{red}{The introduction is where you should outline your project and your report. You should include background, context, previous work, the projects goals and aims, summary of methods, results, and ``take home message''~\footnote{This is a footnote.}.}
+
+\subsection{\textcolor{red}{This is a subsection}}
+
+\textcolor{red}{You can cite references like Ref.~\cite{smith2001} or like Refs.~\cite{smith2002,smith2003,smith2004,smith2005,smith2006,smith2007,smith2008,smith2009,smith2010,smith2011,smith2012} or like Refs.~\cite{smith2013,smith2014}.}
+
+\subsubsection{\textcolor{red}{This is Sub-subsection}}
+\label{sec:subssubsectionref} % This is how you create a section label that can refer to in the text later on.
+
+\textcolor{red}{You can insert figures by using the appropriate {\LaTeX} commands. You can reference figures, e.g. Fig.~\ref{fig:example1}, by calling their labels. You can refer to specific sections of your report like Sec.~\ref{sec:subssubsectionref}.}
+
+\begin{figure}[b]
+\includegraphics[width=0.5\textwidth]{example.png}
+\caption[\textcolor{red}{Short Caption for List of Figures}]{\textcolor{red}{This is a caption. Use captions effectively to provide details about the figure. Include information such as parameters, assumptions, models used, sample preparations, etc. Make sure figures are a good size.}}
+\label{fig:example1} % This creates a figure label for cross-referencing in the text
+\end{figure}
+
+\textcolor{red}{Add equations like,}
+\begin{equation}
+\Delta T= \int_{t=0}^\infty ds f(s) e^{-i \frac{\hbar}{2\pi}\hat{K}}
+\label{eq:example1} % This creates an equation label for cross-referencing in the text
+\end{equation}
+\textcolor{red}{and reference them like Eq.~\ref{eq:example1}.}
+
+\newpage
+\section{\textcolor{red}{Another section}}
+
+\begin{table}[b]
+\begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ \hline
+ 2 & 7 & 78 & 5415 \\
+ \hline
+ 3 & 545 & 778 & 7507 \\
+ \hline
+ 4 & 545 & 18744 & 7560 \\
+ \hline
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+\caption[\textcolor{red}{Short Table Caption}]{\textcolor{red}{This is a table caption}}
+\label{table:example1} % This creates a table label for cross-referencing in the text
+\end{table}
+
+\begin{figure}[b]
+\includegraphics[width=0.5\textwidth]{example.png}
+\caption[\textcolor{red}{Another Short Caption}]{\textcolor{red}{This is another caption.}}
+\label{fig:example2}
+\end{figure}
+
+\newpage
+\section{\textcolor{red}{Add Sections as Required}}
+
+\newpage
+\section{\textcolor{red}{Remember to Summarise and Discuss Results}}
+
+\appendix
+
+\newpage
+\section{Appendix A: \textcolor{red}{First Appendix}}
+
+
+\newpage
+\section{Appendix B: \textcolor{red}{Second Appendix}}
+
+
+\newpage
+
+[\textcolor{red}{Ideally, you should use BibTeX to organize your references. These examples are simply to show formatting.}]
+
+\begin{thebibliography}{99}
+
+% These citations are included as examples. You should use a bib file to store your references and BibTeX to process them as part of the LaTex process.
+
+\bibitem{smith2001}A. Smith, ``The unbearable lightness of seeing'', J. Phys. Q \textbf{23}, 3644 (2001)
+
+\bibitem{smith2002}A. Smith, ``The unbearable lightness of sitting'', J. Phys. Q \textbf{24}, 12 (2002)
+
+\bibitem{smith2003}A. Smith, ``The unbearable lightness of gardening'', J. Phys. Q \textbf{25}, 247 (2003)
+
+\bibitem{smith2004}A. Smith, ``The unbearable lightness of rowing'', J. Phys. Q \textbf{26}, 9087 (2004)
+
+\bibitem{smith2005}A. Smith, ``The unbearable lightness of flying'', J. Phys. Q \textbf{27}, 343 (2005)
+
+\bibitem{smith2006}A. Smith, ``The unbearable lightness of cycling'', J. Phys. Q \textbf{28}, 2 (2006)
+
+\bibitem{smith2007}A. Smith, ``The unbearable lightness of meeting'', J. Phys. Q \textbf{29}, 543 (2007)
+
+\bibitem{smith2008}A. Smith, ``The unbearable lightness of tasting'', J. Phys. Q \textbf{30}, 2345 (2008)
+
+\bibitem{smith2009}A. Smith, ``The unbearable lightness of smelling'', J. Phys. Q \textbf{31}, 1112 (2009)
+
+\bibitem{smith2010}A. Smith, ``The unbearable lightness of touching'', J. Phys. Q \textbf{32}, 764 (2010)
+
+\bibitem{smith2011}A. Smith, ``The unbearable lightness of jumping'', J. Phys. Q \textbf{33}, 243 (2011)
+
+\bibitem{smith2012}A. Smith, ``The unbearable lightness of running'', J. Phys. Q \textbf{34}, 433 (2012)
+
+\bibitem{smith2013}A. Smith, ``The unbearable lightness of skipping'', J. Phys. Q \textbf{35}, 256 (2013)
+
+\bibitem{smith2014}A. Smith, ``The unbearable lightness of falling'', J. Phys. Q \textbf{36}, 666 (2014)
+
+
+\end{thebibliography}
+
+\end{document} 

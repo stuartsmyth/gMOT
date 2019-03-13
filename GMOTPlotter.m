@@ -39,26 +39,26 @@ x3 = [2.9 3 3.1];
 
 
 figure (1)
-bar(x1,eff(1,1:3))
+bar(x3,eff(1,1:3))
 hold on 
 bar(x2,eff(2,1:3))
-bar(x3,eff(3,1:3))
+bar(x1,eff(3,1:3))
 ylabel('\eta_{0}')
 xlabel('grating')
 
 figure (2)
-bar(x1,eff(1,4:6))
+bar(x3,eff(1,4:6))
 hold on 
 bar(x2,eff(2,4:6))
-bar(x3,eff(3,4:6))
+bar(x1,eff(3,4:6))
 ylabel('\eta_{1}')
 xlabel('grating')
 
 figure(3)
-bar(x1,eff(1,7:9))
+bar(x3,eff(1,7:9))
 hold on 
 bar(x2,eff(2,7:9))
-bar(x3,eff(3,7:9))
+bar(x1,eff(3,7:9))
 ylabel('\eta_{b}')
 xlabel('grating')
 
